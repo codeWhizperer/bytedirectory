@@ -1,0 +1,14 @@
+[package]
+name = "starknetbyte4directory"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+starknet-core = "0.11.1"
+actix-web = "4"
+actix-cors = "0.6"
+serde = {version = "1.0", features = ["derive"] }
+uuid = { version = "1.0", features = ["serde", "v4"]}
+chrono = {version = "0.4", features = ["serde"]}
+diesel = { version = "2.2.0", features = ["postgres", "uuid",] }
+dotenv = "0.15.0"
