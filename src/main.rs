@@ -1,5 +1,6 @@
 mod api;
-
+mod model;
+mod schema;
 
 use actix_web::{
     get, post,
@@ -17,3 +18,4 @@ async fn main() -> std::io::Result<()> {
         .run()
         .await
 }
+
