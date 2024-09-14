@@ -3,17 +3,15 @@ mod model;
 mod schema;
 
 use actix_web::{
-    get, post,
-    web::{self, service},
-    App, HttpResponse, HttpServer, Responder,
+    App, HttpServer,
 };
 
 
 
-use api::{submit, hello,echo};
+use api::{submit, get_all_selectors,get_selector_by_name};
 #[actix_web::main]
 async fn main() -> std::io::Result<()> {
-    HttpServer::new(|| App::new().service(hello).service(submit).service(echo))
+    HttpServer::new(|| App::new().service(get_all_selectors).service(submit).service(get_selector_by_name))
         .bind(("127.0.0.1", 8080))?
         .run()
         .await
