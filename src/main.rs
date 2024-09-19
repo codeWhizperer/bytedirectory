@@ -32,7 +32,7 @@ async fn main() -> std::io::Result<()> {
             .service(submit)
             .service(get_selector_by_name)
     })
-    // .bind(("127.0.0.1", 8080))?
+    .bind(("0.0.0.0:8088"))?
     .run()
     .await
 }
