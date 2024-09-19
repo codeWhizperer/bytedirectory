@@ -22,7 +22,7 @@ async fn main() -> std::io::Result<()> {
         App::new()
             .wrap(
                 Cors::default()
-                    .allowed_origin("http://localhost:3000")
+                    .allowed_origin("https://byte-frontend-gpre.vercel.app")
                     .allowed_methods(vec!["GET", "POST"])
                     .allowed_headers(vec![header::AUTHORIZATION, header::ACCEPT])
                     .allowed_header(header::CONTENT_TYPE)
@@ -32,7 +32,7 @@ async fn main() -> std::io::Result<()> {
             .service(submit)
             .service(get_selector_by_name)
     })
-    .bind(("127.0.0.1", 8080))?
+    .bind(())?
     .run()
     .await
 }
