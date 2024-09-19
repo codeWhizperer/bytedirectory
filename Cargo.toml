@@ -6,7 +6,7 @@ edition = "2021"
 [dependencies]
 starknet-core = "0.11.1"
 actix-web = "4"
-actix-cors = "0.6"
+actix-cors = "0.6.5"
 uuid = { version = "1.0", features = ["serde", "v4"]}
 chrono = {version = "0.4", features = ["serde"]}
 diesel = { version = "2.1.0", features = ["postgres", "uuid"] }
