@@ -1,6 +1,6 @@
 # BYTEDIRECTORY
 
-**BYTE4DIRECTORY** is a minimal implementation of a function selector database for Starknet. The project is inspired by the [Ethereum Signature Database](https://www.4byte.directory/).
+**BYTEDIRECTORY** is a minimal implementation of a function selector database for Starknet. The project is inspired by the [Ethereum Signature Database](https://www.4byte.directory/).
 
 ## Installation
 
